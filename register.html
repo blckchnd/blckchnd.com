@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--Favicon-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>BLOCKCHAINED - децентрализованный ранок Bitshares</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html#pluses">Биржа</a>
+                </li>
+                <li>
+                    <a href="index.html#wallet">Кошельки</a>
+                </li>
+                <li>
+                    <a href="index.html#services">О нас</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">Контакты</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="register.html">Rus</a>
+                </li>
+                <li class="visible-xs">
+                    <a href="register_eng.html">Eng</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="register.html">Rus</a>
+                </li>
+                <li class="hidden-xs">
+                    <a href="register_eng.html">Eng</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container m-top">
+    <h1>Register</h1>
+    <div class="row">
+        <div class="col-xs-12 col-md-9 ">
+            <h2>Как зарегистрироваться </h2>
+            <p>Данный туториал пошагово продемонстрирует Вам процесс регистрации полностью функционального аккаунта на блокчейне BitShares.</p>
+            <h2 id="step-1---download-software">Шаг 1 - Загрузка программного обеспечения</h2>
+            <p>Первым шагом будет загрузка и установка клиента BitShares.</p>
+            <h5>BitShares 2 ( 28 марта 2016 / графический интерфейс - 15 февраля 2017)</h5>
+            <ul class="download">
+                <li>
+                    <a href="https://github.com/bitshares/bitshares-core/releases/download/2.0.170215/BitShares-light_2.0.170215.exe" onclick="ga('set', 'nonInteraction', false);ga('send', 'event', { eventCategory: 'download', eventAction: 'click', eventLabel: 'bitshares_client'});">
+                        <img style="height: 24px; margin: 0 0 12px 0;" src="img/icons/windows.svg"> Windows
+                    </a>
+                    <p style="margin-top: 10px; margin-bottom: 0;">sha1: <strong>33172dcbf045b47ebcb184bfab5168bada613426</strong></p>
+                    <p style="margin-top: 0;">sha256: <strong>a724cbfb264c229b481a6259213edeabd1a4e3b2ee7d10b2d63057c707345103</strong></p>
+                </li>
+                <li>
+                    <a href="https://github.com/bitshares/bitshares-core/releases/download/2.0.170201/BitShares-light_2.0.170201.dmg" onclick="ga('set', 'nonInteraction', false);ga('send', 'event', { eventCategory: 'download', eventAction: 'click', eventLabel: 'bitshares_client'});">
+                        <img style="height: 24px; margin: 0 0 12px 0;" src="img/icons/mac.svg"> Mac
+                    </a>
+                    <p style="margin-top: 10px; margin-bottom: 0;">sha1: <strong>e4af05b22782c8cb8697730e1cfbd070c9ef9719</strong></p>
+                    <p style="margin-top: 0;">sha256: <strong>46d260bd7e9b574812aef14268448bac9fa5ea8e3a92c383953a58fc1e742ce1</strong></p>
+                </li>
+                <li>
+                    <a href="https://github.com/bitshares/bitshares-core/releases/download/2.0.170215/bitshares-light_2.0.170215_amd64.deb" onclick="ga('set', 'nonInteraction', false);ga('send', 'event', { eventCategory: 'download', eventAction: 'click', eventLabel: 'bitshares_client'});">
+                        <img style="height: 24px; margin: 0 0 12px 0;" src="img/icons/linux.svg"> Linux
+                    </a>
+                    <p style="margin-top: 10px; margin-bottom: 0;">sha1: <strong>2fcd8e980064c2d816309d87024ca9f7b877a9f7</strong></p>
+                    <p style="margin-top: 0;">sha256: <strong>73bd9c4217c3b3163996ddc4037b32336641a5414029cd4e65d95111de1fdff6</strong></p>
+                </li>
+            </ul>
+            <p>Последний официальный релиз всегда можно найти на GitHub по следующему адресу:
+                <a href="https://github.com/bitshares/bitshares-core/releases/latest" onclick="ga('set', 'nonInteraction', false);ga('send', 'event', { eventCategory: 'download', eventAction: 'click', eventLabel: 'bitshares_client'});">https://github.com/bitshares/bitshares-2/releases/latest</a></p>
+            <p>После того, как Вы загрузили последнюю версию для Вашего компьютера и установили приложение BitShares, запустите его и примите лицензионное соглашение. Затем Вы увидите экран, где Вас попросят задать пароль для Вашего кошелька.</p>
+            <p><img class="img-responsive" src="img/1_welcome_page.jpg" width="800px"></p>
+            <p>Пароль будет использоваться для защиты Вашего кошелька, который содержит Ваши приватные ключи, тогда как хранятся они на Вашем компьютере. Убедитесь, что Вы выбрали достаточно сильный пароль, который не используется где-либо еще.</p>
+            <p><strong>Примечание: Не думайте, что если Вы запомнили свой пароль, то сможете восстановить Ваши средства с другого компьютера, на котором тоже установлен клиент BitShares. Мы расскажем Вам о процессе создания резервной копии Вашего кошелька в последующих пунктах.
+            </strong></p>
+            <h2 id="step-2---create-an-account">Шаг 2 - Создание аккаунта</h2>
+            <p>Следующим шагом будет создание аккаунта, где Вы увидите экран, подобный изображенному ниже:</p>
+            <p><img class="img-responsive" src="img/2_create_account.png" width="800px"></p>
+            <p>Как только Вы выбрали имя аккаунта, которое Вас устраивает, нажмите кнопку “Создать Новый Аккаунт”.</p>
+            <p><strong>Примечание: Аккаунт - это именной публичный ключ, который позволяет Вам получать средства, логиниться на веб-сайтах и подписывать сообщения. Кошелек может содержать один или более аккаунтов, что означает, что Вы можете создать несколько аккаунтов со своего кошелька, так что не нужно чересчур усердно подбирать идеальное имя.</strong></p>
+            <p>После того, как Вы нажмете “Создать Новый Аккаунт”, Вы будете зарегистрированы автоматически, как показано ниже:</p>
+            <p><img class="img-responsive" src="img/3_account_created.png" width="800px"></p>
+            <h2 id="step-4---backup-wallet">Шаг 3 - Создание резервной копии кошелька</h2>
+            <p>Лучше всего будет, если Вы создадите резервную копию Вашего кошелька прямо сейчас. Чтобы это сделать, воспользуйтесь панелью управления кошелька, как показано ниже:</p>
+            <p><img class="img-responsive" src="img/5_backup_wallet.png" width="800px"></p>
+            <p>Ваш пароль используется для защиты Вашего кошелька, который содержит Ваши приватные ключи, тогда как хранятся они на Вашем компьютере. Убедитесь, что Вы выбрали достаточно сильный пароль, который не используется где-либо еще.</p>
+            <p>Введите пароль, который Вы задали при создании своего аккаунта:
+                <img class="img-responsive" src="img/6_create_backup.png" width="432px"></p>
+            <p>После этого приложение BitShares попросит Вас утвердить так называемый brain key, который будет использоваться для восстановления всех Ваших аккаунтов, созданных в Вашем кошельке.</p>
+            <p><img class="img-responsive" src="img/7_copy_brainkey.png" width="432px"></p>
+            <p>Запишите свой brain key и храните его в безопасном месте. Он дает доступ к Вашим аккаунтам и средствам без дальнейших запросов! После этого, нажмите “Далее” и подтвердите, что Вы записали свой brain key правильно:</p>
+            <p><img class="img-responsive" src="img/8_verify_brainkey.png" width="432px"></p>
+            <p><strong>Примечание: Для восстановления Ваших балансов Вам нужно сделать это только один раз, но мы рекомендуем Вам делать это периодически, чтобы избежать потери истории Ваших транзакций.
+            </strong></p>
+        </div>
+
+        <div class="col-xs-12 col-xs-pull col-md-3">
+            <div class="toc">
+                <div data-spy="affix" data-offset-top="200" id="toc" class="affix-top">
+                    <h3 id="toc">Разделы:</h3>
+                    <ul id="markdown-toc">
+                        <li><a href="#step-1---download-software" id="markdown-toc-step-1---download-software">Шаг 1 - Загрузка программного обеспечения</a></li>
+                        <li><a href="#step-2---create-an-account" id="markdown-toc-step-2---create-an-account">Шаг 2 - Создание аккаунта</a></li>
+                        <li><a href="#step-4---backup-wallet" id="markdown-toc-step-4---backup-wallet">Шаг 3 - Создание резервной копии кошелька</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
