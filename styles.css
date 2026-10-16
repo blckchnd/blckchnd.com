@@ -77,7 +77,7 @@ img { display: block; max-width: 100%; }
   color: #343A46;
 }
 
-.projects { padding-bottom: 108px; }
+.projects { padding-bottom: 90px; }
 .section-heading {
   display: flex;
   gap: 18px;
@@ -97,7 +97,7 @@ img { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 .heading-line { height: 1px; background: var(--line); flex: 1; }
-.section-heading-secondary { margin-top: 68px; margin-bottom: 18px; }
+.section-heading-secondary { margin-top: 48px; margin-bottom: 18px; }
 
 .project {
   position: relative;
@@ -203,13 +203,6 @@ img { display: block; max-width: 100%; }
   .two-col { grid-template-columns: 1fr; }
   .two-col > .project:first-child { padding-right: 6px; }
   .two-col > .project:last-child { padding-left: 6px; border-left: 0; }
-  .rudex-project .project-copy { max-width: 62%; }
-  .rudex-watermark {
-    width: 42%;
-    right: -12%;
-    top: 60%;
-    opacity: .12;
-  }
 }
 
 @media (max-width: 767px) {
@@ -229,9 +222,10 @@ img { display: block; max-width: 100%; }
   .primary-nav { grid-area: nav; justify-content: space-between; font-size: 15px; }
 
   .hero {
-    min-height: 68vh;
-    padding-top: 74px;
-    padding-bottom: 72px;
+    min-height: 0;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 48px;
   }
   .hero h1 {
     font-size: clamp(44px, 13vw, 58px);
@@ -239,9 +233,9 @@ img { display: block; max-width: 100%; }
     letter-spacing: -0.06em;
   }
   .hero p { font-size: clamp(22px, 6vw, 29px); line-height: 1.22; }
-  .projects { padding-bottom: 72px; }
+  .projects { padding-bottom: 60px; }
   .section-heading { margin-bottom: 20px; }
-  .section-heading-secondary { margin-top: 48px; }
+  .section-heading-secondary { margin-top: 34px; }
   .project { padding: 26px 2px 28px; }
   .project-featured {
     min-height: 330px;
@@ -251,6 +245,15 @@ img { display: block; max-width: 100%; }
   .project-featured h2 { font-size: 42px; }
   .project h2 { font-size: 34px; }
   .project p { font-size: 17px; line-height: 1.48; }
+  .rudex-project .project-copy { max-width: 66%; }
+  .rudex-watermark {
+    width: 30%;
+    right: 0;
+    top: auto;
+    bottom: 18px;
+    transform: none;
+    opacity: .12;
+  }
   .cta-row { gap: 16px; }
   .contact { padding-bottom: 104px; }
   .contact-icons { gap: 16px; }
